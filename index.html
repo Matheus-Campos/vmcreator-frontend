@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <title>VM Creator</title>
+  </head>
+  <body>
+    <div id="root">
+      <form class="main-form" onsubmit="handleSubmit()" action="#">
+        <div class="title-container">
+          <h1>VM Creator</h1>
+        </div>
+        <input type="text" name="name" placeholder="Machine name" required />
+        <input
+          type="number"
+          name="cpu"
+          placeholder="Number of CPU cores"
+          required
+        />
+        <div class="memory">
+          <input
+            type="number"
+            name="ram"
+            placeholder="Number of RAM memory"
+            required
+          />
+
+          <select name="measure" required>
+            <option selected>MB</option>
+            <option>GB</option>
+          </select>
+        </div>
+        <input type="text" name="ip" placeholder="Network IP" required />
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <script src="static/js/index.js"></script>
+  </body>
+</html>
